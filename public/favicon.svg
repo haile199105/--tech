@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" fill="none">
+  <defs>
+    <radialGradient id="favBg" cx="50%" cy="35%" r="65%">
+      <stop offset="0%" stopColor="#0B1736"/>
+      <stop offset="55%" stopColor="#050C20"/>
+      <stop offset="100%" stopColor="#020614"/>
+    </radialGradient>
+    <linearGradient id="favRim" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#00F2FE"/>
+      <stop offset="50%" stopColor="#0084FF"/>
+      <stop offset="100%" stopColor="#0245A3"/>
+    </linearGradient>
+    <radialGradient id="favSun" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stopColor="#FFFDF0"/>
+      <stop offset="30%" stopColor="#FEE440"/>
+      <stop offset="70%" stopColor="#FF9E00"/>
+      <stop offset="100%" stopColor="#E85D04"/>
+    </radialGradient>
+    <linearGradient id="favMtL1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#0D224A"/>
+      <stop offset="100%" stopColor="#051026"/>
+    </linearGradient>
+    <linearGradient id="favMtL2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#0084FF"/>
+      <stop offset="100%" stopColor="#0256B8"/>
+    </linearGradient>
+    <linearGradient id="favMtR1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#00F2FE"/>
+      <stop offset="100%" stopColor="#0084FF"/>
+    </linearGradient>
+    <linearGradient id="favMtR2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#0B1D40"/>
+      <stop offset="100%" stopColor="#030A1A"/>
+    </linearGradient>
+    <linearGradient id="favRoad" x1="50%" y1="100%" x2="50%" y2="0%">
+      <stop offset="0%" stopColor="#030814"/>
+      <stop offset="60%" stopColor="#06122C"/>
+      <stop offset="100%" stopColor="#0B2352"/>
+    </linearGradient>
+    <linearGradient id="favRail" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stopColor="#0070E0"/>
+      <stop offset="50%" stopColor="#00D2FF"/>
+      <stop offset="100%" stopColor="#FFFFFF"/>
+    </linearGradient>
+  </defs>
+
+  <!-- 1. Precision Rim & Base -->
+  <circle cx="64" cy="64" r="60" fill="url(#favBg)" stroke="url(#favRim)" stroke-width="2.5"/>
+  <circle cx="64" cy="64" r="56" stroke="#00F2FE" stroke-width="0.8" stroke-opacity="0.3" stroke-dasharray="4 2"/>
+
+  <!-- 2. Rising Sun -->
+  <g stroke="#FBBF24" stroke-linecap="round" stroke-width="2" opacity="0.85">
+    <line x1="64" y1="30" x2="64" y2="19" stroke-width="2.5"/>
+    <line x1="77" y1="34" x2="86" y2="24" stroke-width="2"/>
+    <line x1="51" y1="34" x2="42" y2="24" stroke-width="2"/>
+    <line x1="86" y1="43" x2="97" y2="35" stroke-width="1.8" stroke="#F59E0B"/>
+    <line x1="42" y1="43" x2="31" y2="35" stroke-width="1.8" stroke="#F59E0B"/>
+  </g>
+  <circle cx="64" cy="54" r="15" fill="url(#favSun)" stroke="#FFFBEB" stroke-width="1.2"/>
+
+  <!-- 3. Mountain Peaks -->
+  <!-- Left Peak (Summit x=35, y=40) -->
+  <polygon points="12,83 35,40 45,83" fill="url(#favMtL1)"/>
+  <polygon points="35,40 64,62 45,83" fill="url(#favMtL2)"/>
+
+  <!-- Right Peak (Summit x=93, y=40) -->
+  <polygon points="64,62 93,40 83,83" fill="url(#favMtR1)"/>
+  <polygon points="93,40 116,83 83,83" fill="url(#favMtR2)"/>
+
+  <!-- Summit Ridge Highlight -->
+  <polyline points="12,83 35,40 64,62 93,40 116,83" stroke="#00F2FE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+
+  <!-- 4. The Path / Road (መንገድ) -->
+  <path d="M 35 122 C 38 100, 51 79, 61 62 L 67 62 C 77 79, 90 100, 93 122 Z" fill="url(#favRoad)"/>
+  <path d="M 35 122 C 38 100, 51 79, 61 62" stroke="url(#favRail)" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <path d="M 93 122 C 90 100, 77 79, 67 62" stroke="url(#favRail)" stroke-width="3" stroke-linecap="round" fill="none"/>
+
+  <!-- Centerline Perspective -->
+  <line x1="64" y1="119" x2="64" y2="102" stroke="#00F2FE" stroke-width="2.6" stroke-linecap="round"/>
+  <line x1="64" y1="94" x2="64" y2="81" stroke="#00F2FE" stroke-width="2.0" stroke-linecap="round"/>
+  <line x1="64" y1="75" x2="64" y2="66" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Horizon Convergence Spark -->
+  <circle cx="64" cy="62" r="6" fill="#00F2FE" opacity="0.5"/>
+  <circle cx="64" cy="62" r="2.2" fill="#FFFFFF"/>
+</svg>

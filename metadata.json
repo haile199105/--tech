@@ -1,0 +1,6 @@
+{
+  "name": "መንገድ Tech - Building Ethiopia's Digital Path",
+  "description": "መንገድ Tech (MENGED Tech) - Technology for a Brighter Ethiopia. Modern technology solutions, training and digital products.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
